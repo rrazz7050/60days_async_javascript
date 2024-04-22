@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            border: 1px solid black;
+            width: 72%;
+            height: auto;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* justify-content: space-evenly; */
+
+        }
+
+        #container > div{
+           
+            margin: 10px;
+            /* border: 2px solid red; */
+            width: 200px;
+            height: 330px;
+            text-align: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-radius: 5px;
+        }
+
+        #container > div >img:first-child{
+            width: 200px;
+            height: 210px;
+            /* border: 1px solid blue; */
+            background-color: teal;
+        }
+
+        #container > div >img:last-child{
+            width: 90px;
+            height: 35px;
+            /* border: 1px solid blue; */
+            background-color: red;
+        }
+
+        h2{
+            font-size: medium;
+            font-family: sans-serif;
+        }
+        p{
+            font-family: sans-serif;
+            font-size: smaller;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+</body>
+
+    <script>
+
+
+        let head = document.createElement("h1")
+        head.innerText = "Strategic Invistors"
+        document.body.append(head)
+
+        let cont = document.getElementById("container")
+       
+
+        
+       
+
+
+
+        const Invistors = [
+
+            {
+                "picture": "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+                "name" : "Vijay Shekhar Sharma",
+                "status" : "Founder & CEO",
+                "logo" : "https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"
+            },
+            {
+                "picture": "https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png",
+                "name" : "Krunal Shah",
+                "status" : "Founder",
+                "logo" : "https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+            },
+            {
+                "picture": "https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg",
+                "name" : "Amrish Rau",
+                "status" : "CEO",
+                "logo" : "https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png"
+            },
+            {
+                "picture": "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg",
+                "name" : "Sampad Swain",
+                "status" : "Co-founder & CEO",
+                "logo" : "https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png"
+            }
+        ]
+
+
+        Invistors.map((ele)=>{
+
+            let card = document.createElement("div")
+            let heading = document.createElement("h2") 
+            let title = document.createElement("p")
+            let img = document.createElement("img")
+            let logo = document.createElement("img")
+           
+            img.src = "picture"
+            heading.innerText = ele.name;
+            title.innerText = ele.status
+            logo.src = "logo"
+
+            card.append(img, heading , title, logo )
+            cont.append(card)
+            
+        })
+
+       
+
+        
+        
+
+
+
+
+
+
+
+    </script>
+</html>

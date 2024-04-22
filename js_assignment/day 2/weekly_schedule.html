@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Weekly Schedule </title>
+    <style>
+        #container{
+            width: 75%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap:13px;  
+        }
+        
+        #container>div{ 
+            width: 75%;
+            margin: auto;
+            height: 18px;
+            text-align: center;
+            border-radius: 20px; 
+            padding: 10px;
+            font-family: Georgia, 'Times New Roman', Times, serif;   
+            
+        }
+        #last{
+            width: 74%;
+            margin: auto;
+            height: 35px;
+            /border: 1px solid #ccc;/
+            border-radius: 25px;
+            margin-top: 15px;
+        }
+        #container>div:nth-child(even){
+            background-color:#ffd6ef;
+        }
+        #container>div:nth-child(odd){
+            background-color:#fee46d;
+        }
+        #container>div:nth-child(1){
+            visibility: hidden;
+        }
+        #container>div:nth-child(6n+1){
+            background-color:#bceef2;
+        }
+        #last{
+            
+            background-color:#bceef2;
+        }
+        h1{
+            text-align: center;  
+        }
+        h4{
+            width:100%;
+            margin: auto;
+            padding:9px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Weekly Schedule</h1>
+    <div id="container">
+        <div></div>
+        <div>Monday</div>
+        <div>Tuseday</div>
+        <div>Wendsday</div>
+        <div>Thusday</div>
+        <div>Friday</div>
+        <div>08:00</div>
+        <div>hindi</div>
+        <div>hindi</div>
+        <div>hindi</div>
+        <div>hindi</div>
+        <div>hindi</div>
+        <div>09:00</div>
+        <div>eng</div>
+        <div>eng</div>
+        <div>eng</div>
+        <div>eng</div>
+        <div>eng</div>
+        <div>10:00</div>
+        <div>math</div>
+        <div>math</div>
+        <div>math</div>
+        <div>math</div>
+        <div>math</div>
+        <div>11:00</div>
+        <div>sst</div>
+        <div>sst</div>
+        <div>sst</div>
+        <div>sst</div>
+        <div>sst</div>
+        <div>12:00</div>
+        <div>sci</div>
+        <div>sci</div>
+        <div>sci</div>
+        <div>sci</div>
+        <div>sci</div>
+        <div>13:00</div>
+        <div>break</div>
+        <div>break</div>
+        <div>break</div>
+        <div>break</div>
+        <div>break</div>
+        <div>14:00</div>
+        <div>evs</div>
+        <div>evs</div>
+        <div>evs</div>
+        <div>evs</div>
+        <div>evs</div>
+        <div>15:00</div>
+        <div>gk</div>
+        <div>gk</div>
+        <div>gk</div>
+        <div>gk</div>
+        <div>gk</div>
+        <div>16:00</div>
+        <div>com</div>
+        <div>com</div>
+        <div>com</div>
+        <div>com</div>
+        <div>com</div>
+    </div>
+    <div id="last">
+        <h4>Note:</h4>
+    </div>
+</body>
+</html>
